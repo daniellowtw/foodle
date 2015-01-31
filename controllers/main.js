@@ -9,7 +9,7 @@ angular.module('foodle')
                 google: config.CLIENT_ID
             }, {
                 scope: 'https://www.googleapis.com/auth/calendar.readonly',
-                redirect_uri: "http://daniellowtw.github.io"
+                redirect_uri: "http://daniellowtw.github.io/foodle/"
             });
             hello.login('google').then(getStuff, handleError)
         }
