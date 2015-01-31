@@ -1,0 +1,10 @@
+# Foodle
+
+Find free time among friends by looking at their Google calendar
+
+# TODO
+
+* Create parse database and store events to make the page persistent.
+* Once that is done, sort out routing to load from database
+* Allow selection from time range
+* Import other calendars?

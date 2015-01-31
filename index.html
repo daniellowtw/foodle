@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Foodle</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-cookie/angular-cookie.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/hello/dist/hello.all.min.js"></script>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/main.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/core/core.min.js"></script>
+    <script src="js/core/modal.min.js"></script>
+</head>
+
+<body ng-app="foodle">
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+        <nav class="uk-navbar uk-margin-bottom">
+            <div class="uk-navbar-brand ">
+                Foodle
+            </div>
+            <div class="uk-navbar-flip">
+                <a class="uk-icon-question uk-icon-button" data-uk-modal="{target:'#my-id2'}"></a>
+            </div>
+        </nav>
+        <div ng-view="">
+            Loading
+        </div>
+    </div>
+
+    <div id="my-id2" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="uk-modal-header">
+                <h1>Help</h1>
+            </div>
+            This combines all the listed google calendar id and generates a link to view the combined calendar. This is useful for scheduling meeting amongs multiple parties.
+            <h3>Pre requisite</h3>
+            <ol>
+                <li>Google Calendar reflects your free time accurately.</li>
+                <li>You will need to make your calendar public (can restrict to show only free/busy time)</li>
+            </ol>
+            <h2>Enter google ID manually</h2>
+            <ol>
+                <li>Choose either single insertion mode or multiple insertion mode</li>
+                <li>Click on link or copy link text</li>
+            </ol>
+            <h2>Import from google manually</h2>
+            <ol>
+                <li>Click on import from Google button</li>
+                <li>Give permission (The least permission needed, just need to view your calendar for it's ID)</li>
+                <li>Filter the list of calendar by removing calendars that are not relevant</li>
+            </ol>
+            <a class="uk-modal-close uk-close"></a>
+        </div>
+    </div>
+</body>
+
+
+</html>
